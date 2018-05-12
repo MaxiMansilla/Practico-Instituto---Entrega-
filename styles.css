@@ -1,0 +1,121 @@
+.aside{
+	background-color: #f24853;
+}
+#name{
+	font-variant: small-caps;
+	color: #fff;
+	font-size: 50px;
+	padding-left: 10%;
+	box-sizing: border-box;
+ }
+ a{
+ 	color: #fff;
+ }
+
+.link:hover{
+	text-decoration: none;
+	color:#fff;
+}
+
+.navegation{
+	color: #fff;
+	background-color: #304972;
+	font-size: 18.3px;
+}
+.link:visited{
+	text-decoration: none;
+	color: #fff;
+}
+.title{
+	background-color: #304972;
+
+}
+.inicioSesion{
+	margin-left:10%; 
+	font-weight:100;
+}
+
+#areas{
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+
+
+#inline{
+	display: inline;
+}
+.subtitle{
+	margin-top: -5%;
+	font-size: 20px;
+	color: #fff;
+}
+.noticia{
+	margin-bottom:16%; 
+	color:#fff;
+}
+#wrapper{
+	margin-top: 20%;
+	padding: 5%;
+}
+.end{
+	margin-top: 6%;
+}
+.btn-success{
+	font-size: 16px;
+	background-color: #c43537;
+	border-color: #c43537;
+}
+.btn-success:hover{
+	background-color: #ed090c;
+	border-color: #ed090c;
+}
+#laws{
+	text-align: center;
+}
+.social-networks{
+	display:inline;
+}
+
+#navbar{
+	width: auto;
+}
+#footer{
+	background-color:#243349;
+	color: #fff;
+}
+
+.carousel-inner img{
+	max-height: 600px;
+}
+.ico .social-networks{
+	display: inline;
+}
+
+.c_main{
+	background-image:url("http://www.hdfondos.eu/preview/get_photo/192273/1920/1200");
+	min-height: 500px;
+	color: white;
+}
+.subtitle_m{
+	color: #fff;
+	font-size: 48px;
+	font-weight:300;
+}
+.logo{
+	font-variant: small-caps;
+	color: #fff;	
+	font-weight: 400;
+}
+.my-5{
+	font-size: 32px;
+	font-weight: 100;
+}
+.c_contact{
+	height: 500px;
+}
+.list-contact{
+	list-style: none;
+}
+#botones{
+	margin-top: 30px;
+}

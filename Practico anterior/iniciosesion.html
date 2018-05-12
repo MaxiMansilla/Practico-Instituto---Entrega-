@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inicio de sesión</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../styles.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="header">
+				<div class="row justify-content-md-center">
+					<div class="col-lg-8 title">
+						<h1 class="logo">lennonInstitute</h1>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 navegation">		
+						<a href="Practico anterior/iniciosesion.html" id="InicioDeSesión" class="link inicioSesion">Usted no se ha identificado aún (acceder) </a>
+						<div id="areas">
+							<nav class="navbar navbar-dark">
+								<a href="../index.html" id="Inicio" class="link start">Inicio</a>
+								<a href="../cursos.html" id="Cursos" class="link start">Cursos</a>
+								<a href="../contacto.html" id="contacto" class="link start">Contacto</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="min-height: 500px;">
+				<div class="row justify-content-md-center" id="botones">
+					<button type="button" class="btn btn-success col-xs-12 col-sm-3"" id="addUser" data-toggle="modal" data-target="#exampleModalCenter">Agregar usuario
+					</button>
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Formulario</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form>
+									  <div class="form-group">
+										<label for="formGroupExampleInput"> Nombre:</label>
+										<input type="text" id="nombre-form" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre" required>
+									  </div>
+									  <div class="form-group">
+										<label for="formGroupExampleInput">Apellido:</label>
+										<input type="text" id="apellido-form" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su apellido" required>
+									  </div>
+									  <div class="form-group">
+										<label for="formGroupExampleInput2">Edad:</label>
+										<input type="number" id="edad-form" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su edad" min="10" max="100" required>
+									  </div>
+									  <div class="form-group">
+										<label for="formGroupExampleInput">Mail:</label>
+										<input type="text" id="mail-form" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su mail" required>
+									  </div>
+									  <div class="form-group">
+										<label for="formGroupExampleInput">Foto</label>
+										<input type="text" id="foto-form" class="form-control" id="formGroupExampleInput" placeholder="Ingrese el link con su foto" required>
+									  </div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+									<button type="button" data-dismiss="modal" id= "guardarPersona" class="btn btn-primary">Guardar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-2"></div>
+					<input type="button" class="btn btn-primary col-xs-12 col-sm-3" id="obtenerAlumnos" name="Consultar alumnos" value="Consultar alumnos"/>
+				</div>
+				<div class="alert alert-primary" id="alert" role="alert">EXITO! se han encontrado todos los datos.</div>
+				<div id="danger_alert" class="alert alert-danger"  role="alert"> ¡ERROR! no se ha encontrado ningún dato, verifique su url.</div>
+				<p id="paragraph"> </p>
+				<div class="row justify-content-md-center">
+					<table id="tabla1" class="col-xs-12 col-sm-8">
+						<thead><tr><th>Nombre</th><th>Apellido</th><th>Edad</th><th>Mail</th><th>Fotos</th></tr></thead>
+						<tbody id="body1"> 
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="footer" class="row justify-content-center ">
+				<div class="col-md-8 col-lg-9"></div>
+				<div class="col-md-4 col-lg-3">
+					<p class="foot">
+						<i class="ico fab fa-facebook-f"></i>
+						<span class="social-networks"> Lennon Institute Uy </span>
+					<p>
+					<p class="foot">
+						<i class="ico fab fa-twitter"></i>
+						<span class="social-networks">@LennonUy</span>
+					</p>
+					<p class="foot">
+						<i class="ico fab fa-instagram"></i>
+						<span class="social-networks"> @LennonUyOK</span>
+					</p>
+				</div>	
+				<p id="laws">© 2018 Maximiliano Mansilla. Todos los derechos reservados</p>
+			</div>
+		</div>
+		<script src="jquery-3.3.1.min.js"> </script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
